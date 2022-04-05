@@ -80,6 +80,10 @@ a{
     text-decoration: none;
 }
 
+li{
+    list-style: none;
+}
+
 button{
     cursor: pointer;
     outline: none;
@@ -93,9 +97,9 @@ img{
 
 /* Regular css Classes */
 .container{
-    max-width: 968px;
+    max-width: 90%;
     margin-left: 1rem;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
 }
 
 .grid{
@@ -127,4 +131,46 @@ main{
     display: block;
     font-size: var(--small-font-size);
     color: var(--text-color);
+}
+
+/* HEADER & NAV */
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: bisque;
+}
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.nav__menu{
+    position: fixed;
+    bottom: 1rem;
+    background-color: hsl(var(--first-hue), 32%, 16%, .8);
+    width: 90vw;
+    max-width: 500px;
+    border-radius: 4rem;
+    padding: 1rem 2.25rem; 
+    backdrop-filter: blur(10px);
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link{
+    color: var(--text-color);
+    font-size: 1.35rem;
+    padding: .4rem;
+    display: flex;
 }
